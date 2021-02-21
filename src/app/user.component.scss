@@ -1,0 +1,53 @@
+body {
+  direction: rtl !important;
+}
+
+.card {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 10px;
+  font-family: "Shabnam", tahoma;
+
+  .card-title {
+    margin-top: 0;
+    margin-bottom: 3px;
+    color: #000000 !important;
+    font-weight: bold;
+    font-family: "Shabnam", tahoma;
+
+  }
+  .card-header{
+    background-color: transparent;
+    border-bottom: none;
+  }
+  .card-body {
+    padding: 10px 20px;
+    position: relative;
+
+  }
+
+}
+
+.tableinput {
+  border: solid 1px #9faab2;
+  border-radius: 4px;
+  display: block;
+  line-height: 32px;
+  padding: 0 8px;
+  width: calc(100% - 50px);
+  max-width: 150px;
+}
+
+.mat-elevation-z8 th.mat-header-cell {
+  color: #757575;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right !important;
+}
+
+.mat-elevation-z8 {
+
+  padding: 24px !important;
+}
+.mat-table.cdk-table{
+  width: 100%;
+}
