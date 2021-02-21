@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@font-face {
+  font-family: Shabnam;
+  src: url('/assets/fonts/Shabnam.eot');
+  src: url('/assets/fonts/Shabnam.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/Shabnam.woff') format('woff'),
+  url('/assets/fonts/Shabnam.ttf') format('truetype');
+  font-weight: normal;
+}
+* {
+  font-family: "Shabnam", tahoma;
+}
+html, body { height: 100%;
+direction: rtl !important;
+  text-align: right;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

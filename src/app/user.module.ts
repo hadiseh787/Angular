@@ -1,14 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { UserComponent } from './app.component';
+import { UserRoutingModule } from './user-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { UserService } from './user.service';
 import {HttpClientModule} from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {UserComponent} from './user.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +16,13 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    UserRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
+    UserRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
     MatAutocompleteModule,
@@ -32,4 +32,4 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     providers: [UserService],
   bootstrap: [UserComponent]
 })
-export class AppModule { }
+export class UserModule { }

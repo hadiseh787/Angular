@@ -26,8 +26,8 @@ class User {
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+  templateUrl: 'user.component.html',
+  styleUrls: ['user.component.scss']
 })
 export class UserComponent implements OnInit, AfterViewInit {
 
@@ -106,6 +106,7 @@ private searchedUser(){
     if (!e) {
       if (type === 'name') {
         this.selectedName = ''
+
       }
     }
   }
@@ -136,9 +137,8 @@ private searchedUser(){
   }
   onValueChanges(): void {
     this.nameForm.valueChanges.subscribe(val => {
-      console.log(val)
       if (val.name && val.name.id) {
-        this.selectedName = val.name.id
+        this.search(val.name.id, 'id')
       }
     })
   }
