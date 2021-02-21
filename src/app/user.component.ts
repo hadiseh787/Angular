@@ -102,14 +102,6 @@ private searchedUser(){
     }
   }
 
-  resetTable(e, type) {
-    if (!e) {
-      if (type === 'name') {
-        this.selectedName = ''
-
-      }
-    }
-  }
   getUsersListing() {
     this.userService.getUsersListing()
       .subscribe(data => {
