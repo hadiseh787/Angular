@@ -26,7 +26,6 @@ body {
   }
 
 }
-
 .tableinput {
   border: solid 1px #9faab2;
   border-radius: 4px;
@@ -36,18 +35,16 @@ body {
   width: calc(100% - 50px);
   max-width: 150px;
 }
-
-.mat-elevation-z8 th.mat-header-cell {
-  color: #757575;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: right !important;
-}
-
 .mat-elevation-z8 {
-
+  th.mat-header-cell {
+    color: #757575;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right !important;
+  }
   padding: 24px !important;
 }
-.mat-table.cdk-table{
+.mat-table.cdk-table {
   width: 100%;
 }
+

@@ -113,7 +113,9 @@ private searchedUser(){
             startWith<string | User>(''),
             map(value => typeof value === 'string' ? value : value.name),
             map(name => name ? this._filterNames(name) : this.changedName.slice())
+
           );
+
       });
   }
   public displayName(name?: User): string | undefined {
@@ -131,7 +133,16 @@ private searchedUser(){
     this.nameForm.valueChanges.subscribe(val => {
       if (val.name && val.name.id) {
         this.search(val.name.id, 'id')
-      }
+      }else
+        this.search(undefined, 'id')
     })
+
+  }
+  resetTable(e, type) {
+    if (!e) {
+      if (type === 'name') {
+        this.selectedName = ''
+      }
+    }
   }
 }

@@ -75,7 +75,7 @@
                     <ng-container matColumnDef="name_search">
                       <th mat-header-cell *matHeaderCellDef>
                         <form [formGroup]="nameForm">
-                          <input autocomplete="off" class="tableinput" [matAutocomplete]="autoName"
+                          <input autocomplete="off" class="tableinput" [matAutocomplete]="autoName" (ngModelChange)="resetTable($event, 'name')"
                                  formControlName="name" >
                           <mat-autocomplete #autoName="matAutocomplete"
                                             [displayWith]="displayName">
