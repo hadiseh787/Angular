@@ -138,11 +138,4 @@ private searchedUser(){
     })
 
   }
-  resetTable(e, type) {
-    if (!e) {
-      if (type === 'name') {
-        this.selectedName = ''
-      }
-    }
-  }
 }
